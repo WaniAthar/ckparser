@@ -11,4 +11,6 @@ To run this flutter project
 ## How to use
 - Open the app
 - There will be a text box enter your html, latex, code and click on parse
-  
+
+## Screenshots
+![1](https://raw.githubusercontent.com/WaniAthar/ckparser/main/Screenshot_2023-11-01-01-47-07-807_com.example.texparser.jpg)
