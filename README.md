@@ -1,6 +1,7 @@
 # texparser
 
 An android application that can parse your HTML along with latex equations to richtext content.
+The project uses flutter_tex library to render latex and html
 
 ## Getting Started
 
@@ -13,4 +14,5 @@ To run this flutter project
 - There will be a text box enter your html, latex, code and click on parse
 
 ## Screenshots
-![1](https://raw.githubusercontent.com/WaniAthar/ckparser/main/Screenshot_2023-11-01-01-47-07-807_com.example.texparser.jpg)
+<img src="Screenshot_2023-11-01-01-47-11-683_com.example.texparser.jpg" alt="ss1" width="250"/>  <img src="Screenshot_2023-11-01-01-47-07-807_com.example.texparser.jpg" alt="ss1" width="250"/>
+
