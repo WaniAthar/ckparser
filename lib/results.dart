@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_tex/flutter_tex.dart';
+import 'dart:core';
 
 class RichTextScreen extends StatefulWidget {
   const RichTextScreen({super.key, required this.input});
@@ -10,6 +11,13 @@ class RichTextScreen extends StatefulWidget {
 }
 
 class _RichTextScreenState extends State<RichTextScreen> {
+  //!Function to make the input text to the ckFormat
+  String makeCK(String input) {
+    String doubleDollar = input.replaceAll(r'$', r'$$');
+    String finalCk = doubleDollar.replaceAll(r'\\', r'\');
+    return finalCk;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -61,7 +69,7 @@ class _RichTextScreenState extends State<RichTextScreen> {
               ),
               child: TeXView(
                 renderingEngine: const TeXViewRenderingEngine.katex(),
-                child: TeXViewDocument("\r${widget.input.text}"),
+                child: TeXViewDocument("\r${makeCK(widget.input.text)}"),
               ),
             ),
           ),
